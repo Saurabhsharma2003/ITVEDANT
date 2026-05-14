@@ -1,0 +1,127 @@
+<!DOCKTYPE>
+<html lang="en">
+<head>
+
+<meta carset="utf8">
+<meta name="viewport"; content="width=device-width; initial-scale="1.0">
+
+<title>NETFLEX CLONE </TITLE>
+<style>
+* {
+ margin: 0;
+ padding: 0;
+ font-family: Arial,sans-serif;
+}
+ body {
+ background-image: url(nflix.jpg);
+ background-repeat: no-repeat;
+ width: 100%;
+ display: block;
+ 
+
+
+ 
+ color: white;
+ 
+}
+ .hero {
+ height: 100vh;
+ background: url("nflix.jpg");
+ 
+ position: relative;
+}
+
+.hero::after{
+ content: "";
+ position: absolut;
+ height:100%;
+ background: rgba(0,0,0,0.6);
+}
+
+ .navbar {
+ position: absolute;
+ width:100%;
+ padding:20px 50px;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.logo {
+ color:red;
+ font-size:28px;
+ font-weight: bold;
+}
+
+ .nav-btn {
+ background: red;
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ padding: 10px 25px;
+ border-radius: 10px;
+}
+
+.content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align:center;
+ z-index: 1;
+ width: 90%;
+}
+
+.content h1 {
+ font-size:40px;
+ margin-bottom: 10px;
+}
+
+ .content p {
+ margin-bottom:20px;
+}
+
+ .email-box input{
+ padding: 12px;
+ width: 250px;
+ border: none;
+ outline: none;
+}
+
+ .email-box button{
+ background: red;
+ border: none;
+ padding: 12px 20px;
+ color: white;
+ cursor: pointer;
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="hero">
+
+
+    <div class="navbar">
+    <div class="logo">NETFLEX</div>
+    <button class="nav-btn">Sign In</button>
+</div>
+ 
+ <div class="content">
+  <h1>Unlimited movies, shows, and more</h1>
+ <p>Starts at ₹149. Cancel at any time.</p>
+ <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+
+    <div class="email-box">
+    <input type="email" placeholder="Email address">
+    <button>get started</button>
+
+   </div>
+ </div>
+
+</body>
+</html>

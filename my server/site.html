@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+content="Saurabh Travels - Bus booking, tour packages and car rental services">
+
+<meta name="keywords"
+content="travel, bus booking, tours, Saurabh Travels">
+
+<meta name="author"
+content="Saurabh Travels">
+    <title>Saurabh Travels</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    height: 90vh;
+ background-image: url(./rohit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}#bookbtn {
+    padding: 12px 25px;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#bookbtn:hover {
+    background: darkorange;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.about,
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Saurabh Travels</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+        
+        <section class="hero" id="home" >
+        <h2>Travel With Comfort & Safety</h2>
+        <p>Book your trip with Saurabh Travels today.</p>
+        <button id="bookbtn">Book Now</button>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <div class="card">
+            <h3>Bus Booking</h3>
+            <p>Easy and affordable bus booking service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tour Packages</h3>
+            <p>Best holiday packages for family and friends.</p>
+        </div>
+
+        <div class="card">
+            <h3>Car Rental</h3>
+            <p>Luxury and budget cars available.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Saurabh Travels provides trusted travel services with comfort,
+            safety, and affordable pricing.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 9695723181</p>
+        <p>Email: saurabhtravels@gmail.com</p>
+    </section>
+<form action="/submit" method="POST">
+
+    <input
+        type="text"
+        name="customername"
+        placeholder="Enter Name"
+        required
+    >
+
+    <input
+        type="text"
+        name="destination"
+        placeholder="Destination"
+        required
+    >
+
+    <input
+        type="text"
+        name="phone"
+        placeholder="Phone Number"
+        required
+    >
+
+    <button type="submit">
+        Book Now
+    </button>
+
+</form>
+    <footer>
+        <p>© 2026 Saurabh Travels. All Rights Reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
